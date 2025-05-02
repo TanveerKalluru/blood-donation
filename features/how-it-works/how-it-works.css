@@ -1,0 +1,122 @@
+.how-it-works-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.how-it-works-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.how-it-works-section .section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #e63946;
+}
+
+.process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step-icon {
+    font-size: 40px;
+    color: #e63946;
+    margin-right: 25px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.step-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #1d3557;
+}
+
+.step-content p {
+    color: #457b9d;
+    line-height: 1.6;
+}
+
+.time-commitment {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.time-commitment h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1d3557;
+}
+
+.time-commitment p {
+    color: #457b9d;
+    line-height: 1.6;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.schedule-donation {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e63946;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c1121f;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .how-it-works-section {
+        padding: 50px 0;
+    }
+    
+    .step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .step-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .time-commitment p {
+        max-width: 100%;
+    }
+}

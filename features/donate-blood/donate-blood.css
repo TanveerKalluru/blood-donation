@@ -1,0 +1,286 @@
+.donate-blood-section {
+    padding: 80px 0;
+    background-color: #f1faee;
+}
+
+.donate-blood-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #e63946;
+}
+
+.donate-content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+
+.eligibility-checker {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.eligibility-checker h3 {
+    font-size: 24px;
+    color: #1d3557;
+    margin-bottom: 15px;
+}
+
+.eligibility-intro {
+    color: #457b9d;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.eligibility-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #1d3557;
+    font-weight: 500;
+}
+
+.radio-options {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-label input {
+    margin-right: 5px;
+}
+
+.check-button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.check-button:hover {
+    background-color: #c1121f;
+}
+
+.eligibility-result {
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.eligible {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.not-eligible {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.blood-types-info {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blood-types-info h3 {
+    font-size: 24px;
+    color: #1d3557;
+    margin-bottom: 15px;
+}
+
+.blood-types-info > p {
+    color: #457b9d;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.blood-types-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.blood-type-card {
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.blood-type-card:hover {
+    transform: translateY(-5px);
+}
+
+.blood-type {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1d3557;
+    margin-bottom: 5px;
+}
+
+.need-level {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.need-level.critical {
+    color: #e63946;
+}
+
+.need-level.high {
+    color: #ff9500;
+}
+
+.need-level.medium {
+    color: #2a9d8f;
+}
+
+.need-level.low {
+    color: #457b9d;
+}
+
+.blood-facts {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.blood-facts h4 {
+    font-size: 18px;
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+.blood-facts ul {
+    padding-left: 20px;
+    color: #457b9d;
+}
+
+.blood-facts li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+
+.donation-cta {
+    text-align: center;
+    background-color: #1d3557;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+.donation-cta h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.donation-cta p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+    color: #a8dadc;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.primary-button, .secondary-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.primary-button {
+    background-color: #e63946;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #c1121f;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.secondary-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 900px) {
+    .donate-content {
+        flex-direction: column;
+    }
+    
+    .blood-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .radio-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

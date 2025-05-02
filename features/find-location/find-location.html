@@ -1,0 +1,114 @@
+
+<section id="find-donation" class="find-location-section">
+    <div class="container">
+      <div class="location-container">
+        <div class="location-info">
+          <h2>Find Donation Center</h2>
+          <p>Locate your nearest donation center and schedule an appointment to save lives.</p>
+          
+          <div class="search-container">
+            <div class="search-box">
+              <input type="text" id="zip-code" placeholder="Search a ZIP code" aria-label="Enter ZIP code">
+              <button class="search-btn" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </button>
+            </div>
+            
+            <div class="current-location">
+              <button class="location-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                Use my current location
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="location-results">
+          <div class="results-header">
+            <h3>Nearby Donation Centers</h3>
+            <div class="filter-options">
+              <select id="distance-filter">
+                <option value="5">Within 5 miles</option>
+                <option value="10" selected>Within 10 miles</option>
+                <option value="25">Within 25 miles</option>
+                <option value="50">Within 50 miles</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="center-list">
+            <!-- This will be populated by JS -->
+            <div class="center-card">
+              <div class="center-info">
+                <h4>City Blood Center</h4>
+                <p class="address">123 Main Street, Anytown, ST 12345</p>
+                <p class="distance">2.3 miles away</p>
+                <div class="center-details">
+                  <span class="availability">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Open today: 8:00 AM - 5:00 PM
+                  </span>
+                  <span class="appointment">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Appointments available
+                  </span>
+                </div>
+              </div>
+              <div class="center-actions">
+                <a href="#" class="btn btn-outline">Get Directions</a>
+                <a href="#" class="btn btn-primary">Schedule</a>
+              </div>
+            </div>
+            
+            <div class="center-card">
+              <div class="center-info">
+                <h4>Memorial Hospital Blood Bank</h4>
+                <p class="address">456 Hospital Drive, Anytown, ST 12345</p>
+                <p class="distance">4.7 miles away</p>
+                <div class="center-details">
+                  <span class="availability">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Open today: 7:00 AM - 7:00 PM
+                  </span>
+                  <span class="appointment">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Walk-ins welcome
+                  </span>
+                </div>
+              </div>
+              <div class="center-actions">
+                <a href="#" class="btn btn-outline">Get Directions</a>
+                <a href="#" class="btn btn-primary">Schedule</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="load-more">
+            <button class="btn btn-outline btn-load">Load More Results</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

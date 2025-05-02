@@ -1,0 +1,94 @@
+<div class="request-form-section">
+    <div class="container">
+        <h2 class="section-title">Donate</h2>
+        <form id="blood-request-form" class="request-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="full-name" class="visually-hidden">Full Name</label>
+                    <input type="text" id="full-name" name="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone" class="visually-hidden">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group dropdown">
+                    <label for="blood-type" class="visually-hidden">Blood Type</label>
+                    <select id="blood-type" name="bloodType">
+                        <option value="" disabled selected>Blood Type</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                    <div class="dropdown-arrow">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M7 10l5 5 5-5z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="units-needed" class="visually-hidden">Units Needed</label>
+                    <input type="number" id="units-needed" name="unitsNeeded" placeholder="Units Needed" min="1" max="10" required>
+                </div>
+                <div class="form-group dropdown">
+                    <label for="location" class="visually-hidden">Location</label>
+                    <select id="location" name="location">
+                        <option value="" disabled selected>Location</option>
+                        <option value="hospital">Hospital</option>
+                        <option value="blood-bank">Blood Bank</option>
+                        <option value="donation-center">Donation Center</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div class="dropdown-arrow">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M7 10l5 5 5-5z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group dropdown">
+                    <label for="faqs" class="visually-hidden">FAQs</label>
+                    <select id="faqs" name="faqs">
+                        <option value="" disabled selected>FAQs</option>
+                        <option value="eligibility">Am I eligible to request blood?</option>
+                        <option value="process">How long does the process take?</option>
+                        <option value="documents">What documents do I need?</option>
+                        <option value="cost">Is there a cost involved?</option>
+                    </select>
+                    <div class="dropdown-arrow">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M7 10l5 5 5-5z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </div>
+        </form>
+        
+        <div class="availability-section">
+            <h3>Check Availability</h3>
+            <div class="date-picker">
+                <input type="date" id="availability-date" placeholder="Enter a date">
+            </div>
+        </div>
+    </div>
+</div>
